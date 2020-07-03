@@ -6,7 +6,6 @@ body {
 #slider_1 {
   background-image: url(../images/slider_1.png);
   background-position: 356px -70px;
-  background-size: 898px 710px;
 }
 
 #slider_1 h2 {
@@ -46,27 +45,47 @@ body {
 .cabecalho h2 {
   margin-top: 65px;
   font-style: italic;
-  font-weight: 300;
   font-size: 36px;
+}
+
+@media (max-width: 600px) {
+  .cabecalho h2 {
+    margin-top: 330px;
+    margin-left: -10px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .cabecalho {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 #navegador {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 #navegador h1 {
+  display: inline-block;
   margin-top: 0px;
   font-style: normal;
   text-decoration: none;
   font-weight: bold;
   font-size: 36px;
   line-height: 60px;
+}
+
+#navegador nav {
+  display: inline-block;
 }
 
 #navegador nav a {
@@ -79,5 +98,68 @@ body {
   font-size: 36px;
   line-height: 60px;
   color: black;
+}
+
+#navegador nav .ops_menu {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  #navegador nav .ops_menu {
+    display: none;
+  }
+}
+
+#navegador nav #btn_menu {
+  display: none;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  #navegador nav #btn_menu {
+    display: block;
+    float: right;
+  }
+}
+
+@media (max-width: 600px) {
+  #navegador nav {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  #navegador nav {
+    top: 15px;
+    left: 10px;
+    width: 100%;
+    margin-left: 0px;
+    position: absolute;
+  }
+}
+
+#navegador nav:hover {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  #navegador nav:hover #btn_menu {
+    margin-left: 100px;
+  }
+  #navegador nav:hover .ops_menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 600px) {
+  #navegador {
+    position: relative;
+  }
 }
 /*# sourceMappingURL=slider.css.map */
