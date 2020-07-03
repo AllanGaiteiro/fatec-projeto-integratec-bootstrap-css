@@ -4,35 +4,70 @@ body {
 
 }
 
+/////// slider 1 : imagens do cloud Computing
 #slider_1 {
     background-image   : url(../images/slider_1.png);
     background-position: 356px -70px;
 
-    h2 {
+    #nuvem_h2 {
+        display: block;
         width: 340px;
+
+        @media(max-width: 600px) {
+            width     : calc(100% - 10px);
+            margin-top: 300px;
+        }
+
+    }
+
+    @media(max-width: 600px) {
+        background-position: center;
     }
 }
 
+//////// slider 2 : imagens do estruturas de dados
 #slider_2 {
     background-image   : url(../images/slider_2.png);
     background-position: 439px 51px;
 
-    h2 {
+    #struct_h2 {
+        display: block;
         width: 520px;
+
+        @media(max-width: 600px) {
+            width     : calc(100% - 10px);
+            margin-top: 300px;
+        }
+    }
+
+    @media(max-width: 600px) {
+        background-position: center;
     }
 }
 
+/////// slider 3 : imagem praticas de design
 #slider_3 {
 
     background-image   : url(../images/slider_3.png);
     background-position: 439px 0px;
 
-    h2 {
+    #design_h2 {
+        display: block;
         width: 420px;
+
+        @media(max-width: 600px) {
+            width     : calc(100% - 10px);
+            margin-top: 300px;
+        }
+    }
+
+    @media(max-width: 600px) {
+        background-position: -100px;
     }
 }
 
 .cabecalho {
+    position: relative;
     margin-top           : 0px;
     padding-left         : 40px;
     padding-right        : 40px;
@@ -43,38 +78,72 @@ body {
     background-repeat    : no-repeat;
     background-attachment: fixed;
 
-
     h2 {
-        margin-top : 65px;
-        font-style : italic;
-        font-size  : 36px;
-        @media(max-width: 600px){
-            
-            margin-top: 330px;
-            margin-left: -10px;
-            width: 100%;
-            padding: 10px;
+        display: none;
+        margin-top: 65px;
+        
+        font-style: italic;
+        font-size : 32px;
 
-            background-color: rgba(0, 0, 0,0.8);
-            color: white;
+        @media(max-width: 600px) {
+            margin-left     : -10px;
+            padding         : 10px;
+            padding-top     : 20px;
+            padding-left    : 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color           : white;
+
         }
     }
 
-    @media(max-width:600px) {
-        width: 100%;
-        padding-left         : 10px;
-        padding-right        : 10px;
+    #barra {
+        position: absolute;
+        bottom  : 30px;
+        width   : calc(100% - 170px);
+        height  : 5px;
+        border  : 1px solid black;
+
+        #loadBarra {
+            width           : 0%;
+            height          : 100%;
+            background-color: black;
+            animation: barra 5.01s linear infinite;
+            @keyframes barra {
+                0%{
+                    width: 0%;
+                }
+                100%{
+                    width: 100%;
+                }
+            }
+        }
+
+        @media(max-width: 600px) {
+            width : calc(100% - 20px);
+            bottom: 100px;
+            
+        }
 
     }
+
+    @media(max-width:600px) {
+        width        : calc(100% - 20px);
+        padding-left : 10px;
+        padding-right: 10px;
+
+    }
+
 }
 
 #navegador {
-    width          : 100%;
+    position         : relative;
+    width            : 100%;
+    height: 70px;
     //display        : flex;
-    justify-content: space-between;
+    justify-content  : space-between;
 
     h1 {
-        display: inline-block;
+        display   : inline-block;
         margin-top: 0px;
 
         font-style     : normal;
@@ -85,7 +154,13 @@ body {
     }
 
     nav {
-        display: inline-block;
+        position: absolute;
+        height: 70px;
+        top     : 0px;
+        right   : 0px;
+        margin-top: -15px;
+        display : inline-block;
+
         a {
             float          : right;
             margin-right   : 10px;
@@ -94,7 +169,8 @@ body {
             text-decoration: none;
             font-weight    : bold;
             font-size      : 36px;
-            line-height    : 60px;
+            
+            line-height    : 100px;
             color          : black;
         }
 
@@ -103,19 +179,24 @@ body {
 
             @media(max-width: 600px) {
                 display: none;
+                height: 70px;
             }
         }
 
         #btn_menu {
-            display: none;
-            width: 35px;
-            height: 35px;
-            margin-right:10px ;
+            display     : none;
+            width       : 35px;
+            height      : 35px;
+            margin-right: 10px;
+            margin-top: calc(35px /2);
 
             @media(max-width: 600px) {
-                display: block;
-                float: right;
+                display     : block;
+                float       : right;
+                margin-right: 0px;
+                padding-bottom: 15px;
                 
+
             }
         }
 
@@ -123,12 +204,14 @@ body {
             display: block;
 
         }
-        @media(max-width: 600px){
-            top: 15px;
-            left: 10px;
-            width: 100%;
-            margin-left: 0px;
-            position: absolute;
+
+        @media(max-width: 600px) {
+            position   : absolute;
+            top        : 15px;
+            left       : 10px;
+            width      : 100%;
+            margin-left: -20px;
+            
         }
     }
 
@@ -136,29 +219,33 @@ body {
         display: block;
 
         @media(max-width: 600px) {
-            
-            #btn_menu{
-                
-                margin-left: 100px;
-                //border-bottom: 1px solid black;
-            }
-            
-            
+
+            /*#btn_menu {
+
+                //margin-left: 100px;
+            }*/
+
+
 
             .ops_menu {
-                display      : block;
-                width: 100%;
-                text-align: center;
-                background-color: rgba(255, 255, 255,0.8);
+                display         : block;
+                width           : calc(100% - 10px);
+                text-align      : center;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding-left    : 10px;
+                padding-right   : 10px;
 
-                //margin-left: -200px;
+                margin-right : -10px;
+                margin-left  : -20px;
                 border-bottom: 1px solid black;
             }
         }
     }
-    @media(max-width: 600px){
-        position: relative;
-    }
 
+    @media (max-width: 600px) {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding-right: 10px;
+
+    }
 
 }
