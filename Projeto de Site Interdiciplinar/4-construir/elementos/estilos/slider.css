@@ -106,7 +106,7 @@ body {
 .cabecalho #barra {
   position: absolute;
   bottom: 30px;
-  width: calc(100% - 170px);
+  width: calc(100% - 80px);
   height: 5px;
   border: 1px solid black;
 }
