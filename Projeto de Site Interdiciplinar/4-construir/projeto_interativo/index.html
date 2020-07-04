@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/interaçao.css">
+    <script src="script/interativo.js"></script>
+    <title>Interativo</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1> Projeto Interativo da aula de Praticas de Desing</h1>
+        </header>
+        <main>
+            <img id="pc" src="images/pc_gamer_1.png" usemap="#“shape”">
+
+            <map name=“shape”>
+                <area shape="poly" alt="placa de Video" coords="93, 264,221,236,247,249,233,280,156,286,93,302"
+                    onmouseover="clicou('placaVideo')" />
+                <area shape="poly" alt="colers"
+                    coords="88, 242, 88, 146, 118, 112, 242, 101, 203, 146, 142, 171, 138, 232"
+                    onmouseover="clicou('coler')" />
+                <area shape="poly" alt="placa de Video" coords="162,181,210,157,209,219,154,234"
+                    onmouseover="clicou('processador')" />
+            </map>
+
+
+
+            <div id="coler">
+                <img src="images/image_1.png" alt="">
+                <div class="fechar" onclick="fechar('coler')"></div>
+
+                <p>
+                    Cooler Fan Dupla Face 120mm C/18 Leds Rgb P/ Gabinete Pc Cpu
+                </p>
+            </div>
+
+            <div id="processador">
+                <img src="images/image_3.png" alt="">
+                <div class="fechar" onclick="fechar('processador')"></div>
+                <p>
+                    Intel Core i7-9700KF Coffee Lake, Cache 12MB, 3.60GHz
+                </p>
+            </div>
+            <div id="placaVideo">
+                <img src="images/image_2.png" alt="">
+                <div class="fechar" onclick="fechar('placaVideo')"></div>
+                <p>
+                    Placa de Vídeo GeForce RTX™ 2060 6GB
+                </p>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>
