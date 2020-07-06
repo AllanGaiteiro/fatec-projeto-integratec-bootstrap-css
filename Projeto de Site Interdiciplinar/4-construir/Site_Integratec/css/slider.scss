@@ -65,7 +65,7 @@ body {
         background-position: -100px;
     }
 }
-
+/////// Configuraçoes Padroes
 .cabecalho {
     position: relative;
     margin-top           : 0px;
@@ -76,7 +76,6 @@ body {
     height               : 650px;
     margin               : auto;
     background-repeat    : no-repeat;
-    background-attachment: fixed;
 
     h2 {
         display: none;
@@ -107,7 +106,7 @@ body {
             width           : 0%;
             height          : 100%;
             background-color: black;
-            animation: barra 5.01s linear infinite;
+            animation: barra 5s linear infinite;
             @keyframes barra {
                 0%{
                     width: 0%;
@@ -129,121 +128,6 @@ body {
     @media(max-width:600px) {
         width        : calc(100% - 20px);
         padding-left : 10px;
-        padding-right: 10px;
-
-    }
-
-}
-
-#navegador {
-    position         : relative;
-    width            : 100%;
-    height: 70px;
-    //display        : flex;
-    justify-content  : space-between;
-
-    h1 {
-        display   : inline-block;
-        margin-top: 0px;
-
-        font-style     : normal;
-        text-decoration: none;
-        font-weight    : bold;
-        font-size      : 36px;
-        line-height    : 60px;
-    }
-
-    nav {
-        position: absolute;
-        height: 70px;
-        top     : 0px;
-        right   : 0px;
-        margin-top: -15px;
-        display : inline-block;
-
-        a {
-            float          : right;
-            margin-right   : 10px;
-            margin-left    : 65px;
-            font-style     : normal;
-            text-decoration: none;
-            font-weight    : bold;
-            font-size      : 36px;
-            
-            line-height    : 100px;
-            color          : black;
-        }
-
-        .ops_menu {
-            display: block;
-
-            @media(max-width: 600px) {
-                display: none;
-                height: 70px;
-            }
-        }
-
-        #btn_menu {
-            display     : none;
-            width       : 50px;
-            height      : 50px;
-            margin-right: 10px;
-            margin-top: 10px;
-
-            @media(max-width: 600px) {
-                display     : block;
-                float       : right;
-                margin-right: 0px;
-                padding-bottom: 10px;
-                
-
-            }
-        }
-
-        @media(max-width:600px) {
-            display: block;
-
-        }
-
-        @media(max-width: 600px) {
-            position   : absolute;
-            top        : 15px;
-            left       : 10px;
-            width      : 100%;
-            margin-left: -20px;
-            
-        }
-    }
-
-    nav:hover {
-        display: block;
-
-        @media(max-width: 600px) {
-
-            /*#btn_menu {
-
-                //margin-left: 100px;
-            }*/
-
-
-
-            .ops_menu {
-                display         : block;
-                width           : calc(100% - 10px);
-                text-align      : center;
-                background-color: rgba(255, 255, 255, 0.5);
-                padding-left    : 10px;
-                padding-right   : 10px;
-
-                margin-right : -10px;
-                margin-left  : -20px;
-                border-bottom: 1px solid black;
-            }
-        }
-    }
-
-    @media (max-width: 600px) {
-        background-color: rgba(255, 255, 255, 0.5);
         padding-right: 10px;
 
     }
