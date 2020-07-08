@@ -1,0 +1,38 @@
+footer{
+    background-color:#CE1919;
+    display:flex;
+    justify-content: space-between;
+    color: white;
+    padding-left:40px ;
+    padding-right:40px ;
+
+    
+}
+.colunas p{
+    font-size:20px;
+    margin: 0px;
+}
+.colunas h1{
+  
+    font-style:bold;
+    font-size: 28px;
+    
+     
+}
+.colunas{
+    font-size:20px;
+    height:200px;
+} 
+@media(max-width:600px){
+    footer{
+        display:block;
+        
+        padding-left: 10px ;
+        padding-right:10px ;
+        padding-top:10px;
+    }
+    
+
+
+
+}
