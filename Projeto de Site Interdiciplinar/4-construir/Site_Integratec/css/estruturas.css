@@ -30,6 +30,28 @@
   width: 680px;
 }
 
+#principal article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#principal pre {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#principal ul {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  #principal ul {
+    margin-left: 0px;
+  }
+}
+
 @media (max-width: 600px) {
   #principal {
     width: 100%;

@@ -36,7 +36,6 @@ function artigos(p) {
         document.querySelector('section.asside_redes').style.display = 'none'
         document.querySelector('section.asside_estruturas').style.display = 'none'
         document.querySelector('section.asside_interativo').style.display = 'block'
-        document.querySelector('aside.artigos').style.height = '715px'
 
     }
 }

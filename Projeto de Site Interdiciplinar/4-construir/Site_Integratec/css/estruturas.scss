@@ -23,6 +23,23 @@
 
 #principal {
     width: 680px;
+    article{
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    pre{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    ul{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @media(max-width:600px){
+            margin-left: 0px;
+        }
+    }
 
     @media(max-width: 600px) {
         width: 100%;
