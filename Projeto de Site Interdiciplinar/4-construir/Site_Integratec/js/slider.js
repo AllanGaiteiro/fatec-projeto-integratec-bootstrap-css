@@ -6,7 +6,7 @@
 
 
 /// variaveis
-var cabecalho = document.querySelector('div.cabecalho')
+var cabecalho = document.querySelector('header.cabecalho')
 var n = 1
 var tmp = 5000
 var count = 0

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estruturas.css">
+</head>
+
+<body>
+    <div id="estruturas">
+        <section id="principal">
+            <article id="estr_apresentaçao">
+                <h1>Estruturas de Dados</h1>
+                <p>Uma aula onde o foco é aprender as estruturas basicas da programação, utilizando a linguagem C.
+                    Algumas aulas desse curso abordaras alguns conceitos muito interesssante como “ponteiro”, “struct”,
+                    “pilha”.</p>
+            </article>
+            <article id="estr_Struct">
+                <h2>Struct</h2>
+                <p>Uma struct é uma variável especial que contém diversas outras variáveis normalmente de tipos
+                    diferentes. As variáveis internas contidas pela struct são denominadas membros da struct.
+                    Estruturas são usadas para representar um registro. Suponha que você queira acompanhar seus livros
+                    em uma biblioteca. Convém acompanhar os seguintes atributos sobre cada livro -</p>
+                <ul>
+                    <li>Título</li>
+                    <li>Autor</li>
+                    <li>Sujeito</li>
+                    <li>ID do livro</li>
+                </ul>
+                <h3>Definindo uma estrutura </h3>
+                <p>Para definir uma estrutura, você deve usar a struct instrução . A instrução struct define um novo
+                    tipo de dados, com mais de um membro. O formato da instrução struct é o seguinte.
+
+                    Sintaxe: </p>
+                <pre>
+                    <code id="code1">
+    #include <stdio.h>
+    struct <identificador>
+        {
+         <listagem dos tipos e membros>;
+        }
+    struct <identificador> <variavel>;
+                </code>
+            </pre>
+                <h3>Acessando membros da estrutura </h3>
+                <p>Para acessar qualquer membro de uma estrutura, usamos o a operador de acesso membros (.) .
+
+                    Veja o exemplo abaixo:</p>
+                <pre>
+                    <code id="code2">
+    #include <stdio.h>
+    struct tipo_Pessoa
+    {
+        char nome[40];
+        char sobrenome[40];
+        ////.... etc ...
+    } voce;
+
+    int main(void)
+    {
+        /// Passando valor
+        printf("digite o nome:");
+        fgets(voce.nome, 40, stdin);
+        printf("digite o sobrenome:");
+        fgets(voce.sobrenome, 40, stdin);
+    
+        ///imprimindo o valor
+    
+        printf("\nSeu nome é %s %s", 
+        voce.nome, voce.sobrenome);
+    }
+                    </code>
+                </pre>
+                <p>Voce vai notar que o ponto(.) vai apontar para um menbro da struct que esta antes do ponto.
+                    No exemplo acima voce digita seu nome que esta em (voce.nome) e sobrenome q esta em
+                    (voce.sobrenome), ele vai mostrar o nome com o printf,</p>
+            </article>
+
+        </section>
+        <aside id="asside_struturas">
+            <div class="conteudo_asside">
+                <h3>Ponteiros</h3>
+                <img src="../images/asside-struct-3.png" alt="relacionado ao conteudo">
+                <p>Ponteiros são muito úteis quando uma variável tem que ser acessada em diferentes partes de um
+                    programa. </p>
+            </div>
+            <div class="conteudo_asside">
+                <h3>Para que serve Fgets? </h3>
+                <img src="../images/asside-struct-2.png" alt="relacionado ao conteudo">
+                <p>Para se ler uma string num arquivo, a tambem a funçao gets() que fas um serviço parecido ao fgets()
+                </p>
+            </div>
+            <div class="conteudo_asside">
+                <h3>Onde se usa C?</h3>
+                <img src="../images/asside-struct-1.png" alt="relacionado ao conteudo">
+                <p>Usado em programas que lidam diretamente com hardware, como sistemas operacional ou um driver.</p>
+            </div>
+
+        </aside>
+
+    </div>
+</body>
+
+</html>

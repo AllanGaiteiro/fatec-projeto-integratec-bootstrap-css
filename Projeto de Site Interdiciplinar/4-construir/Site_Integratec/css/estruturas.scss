@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    width : 1060px;
+    margin: auto;
+    @media(max-width: 600px){
+        width: 100%;
+    }
+}
+
+#estruturas {
+    
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    @media(max-width: 600px){
+        display: block;
+    }
+}
+
+#principal {
+    width: 680px;
+    @media(max-width: 600px){
+        width: 100%;
+    }
+}
+
+#asside_struturas {
+    background     : rgba(196, 196, 196, 0.31);
+    width          : 330px;
+    color          : white;
+    padding-top    : 95px;
+    justify-content: space-between;
+
+    .conteudo_asside {
+        background   : #BBBBBB;
+        height       : 480px;
+        padding      : 10px;
+        margin-bottom: 60px;
+
+        
+    }
+
+    @media(max-width: 600px) {
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+pre {
+    margin:auto;
+    background   : #E0E0E0;
+    width        : 620px;
+    border-radius: 10px;
+    @media(max-width: 600px){
+        width: 100%;
+        code{
+            
+                width: 300px;
+            
+        }
+    }
+    
+}
+#code1 {
+
+    height: 170px;
+}
+
+#code2 {
+    height: 490px;
+}
