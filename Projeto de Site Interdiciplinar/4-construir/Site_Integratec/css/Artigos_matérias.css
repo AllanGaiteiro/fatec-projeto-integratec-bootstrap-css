@@ -195,6 +195,7 @@ footer {
   }
 
   .rede2 img {
+    display: none;
     width   : 100%;
     left    : 0px;
   }

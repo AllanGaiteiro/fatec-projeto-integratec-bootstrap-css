@@ -17,6 +17,15 @@
   }
 }
 
+#estr_apresentaçao h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#estr_apresentaçao h1 article h2 {
+  font-size: 22px;
+}
+
 #principal {
   width: 680px;
 }
@@ -101,5 +110,9 @@ pre {
   .conteudoPrincipal section {
     width: calc(100% - 20px);
   }
+}
+
+.conteudoPrincipal {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=estruturas.css.map */

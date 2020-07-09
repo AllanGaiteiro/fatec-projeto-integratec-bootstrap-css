@@ -46,10 +46,10 @@ header {
 
     #sobre_h1 {
         position        : absolute;
-        bottom          : 50px;
+        bottom          : 200px;
         width           : 560px;
         margin          : 0px;
-        margin-left     : -40px;
+        margin-left     : 0px;
         //height: 90px;
         background-color: rgba(0, 0, 0, 0.80);
         color           : white;
@@ -67,9 +67,9 @@ header {
     }
 
     @media(max-width:600px) {
-        width        : calc(100% - 20px);
-        padding-left : 10px;
-        padding-right: 10px;
+        width        : 100%;
+        padding-left : 0px;
+        padding-right: 0px;
         //background-position: center;
     }
 
@@ -106,6 +106,9 @@ main {
 
         @media(max-width: 600px) {
             width: 100%;
+            img{
+                width: 100%;
+            }
 
         }
     }

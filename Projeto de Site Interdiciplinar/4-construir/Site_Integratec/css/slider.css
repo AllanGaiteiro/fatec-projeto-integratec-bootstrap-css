@@ -15,7 +15,7 @@ body {
 
 @media (max-width: 600px) {
   #slider_1 #nuvem_h2 {
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
   }
 }
 
@@ -37,7 +37,7 @@ body {
 
 @media (max-width: 600px) {
   #slider_2 #struct_h2 {
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
   }
 }
 
@@ -59,7 +59,7 @@ body {
 
 @media (max-width: 600px) {
   #slider_3 #design_h2 {
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
   }
 }
 
@@ -94,6 +94,7 @@ body {
     margin: 0px;
     margin-left: -10px;
     padding: 10px;
+    width: calc(100% - 40px);
     padding-top: 20px;
     padding-left: 20px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -144,10 +145,10 @@ body {
 
 @media (max-width: 600px) {
   .cabecalho {
-    width: calc(100% - 20px);
+    width: 100%;
     margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 /*# sourceMappingURL=slider.css.map */

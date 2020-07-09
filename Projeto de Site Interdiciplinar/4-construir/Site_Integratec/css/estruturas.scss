@@ -11,6 +11,15 @@
     }
 }
 
+#estr_apresentaçao h1 {
+    text-align: center;
+    font-size : 30px;
+
+    article h2 {
+        font-size: 22px;
+    }
+}
+
 
 #principal {
     width: 680px;
@@ -88,11 +97,11 @@ pre {
 
 ///////// externo
 @media(max-width: 600px) {
-    .header{
-        width: 100%;
+    .header {
+        width              : 100%;
         background-position: -300px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left       : 0px;
+        padding-right      : 0px;
     }
 
 
@@ -103,4 +112,9 @@ pre {
             width: calc(100% - 20px);
         }
     }
+}
+
+.conteudoPrincipal {
+    margin-top: 40px;
+
 }
