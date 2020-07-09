@@ -2,9 +2,9 @@
     position       : relative;
     width          : 1140px;
     height         : 70px;
-    background     : #CE1919;
+    background   : #d31a1a;
     margin         : 0px;
-    margin-left    : -40px;
+    
     margin-top     : -5px;
     justify-content: space-between;
 
@@ -40,7 +40,7 @@
             font-weight    : bold;
             font-size      : 22px;
             line-height    : 70px;
-            color          : black;
+            color          : white;
         }
 
         #nav_asside {
@@ -65,23 +65,27 @@
         }
 
         #nav_main_btn_menu {
-            display     : none;
-            width       : 50px;
-            height      : 50px;
-            margin-right: 10px;
+            display: none;
+
             margin-top: -5px;
 
+            img {
+                width : 50px;
+                height: 50px;
+            }
 
-
-            @media(max-width: 600px) {
-                
-                display: block;
-                float  : right;
-                margin-right: 0px;
+            h2 {
+                margin-left: 30px;
                 
             }
-        }
+            @media(max-width: 600px) {
 
+                display        : flex;
+                justify-content: space-between;
+                width          : 100%;
+                margin-right   : 0px;
+            }
+        }
         @media(max-width:600px) {
             display: block;
 
@@ -91,7 +95,7 @@
             position   : absolute;
             top        : 15px;
             left       : 10px;
-            width  : 100%;
+            width      : 100%;
             margin-left: -20px;
 
         }
@@ -102,6 +106,7 @@
 
         @media(max-width: 600px) {
             top: 70px;
+
             /*#btn_menu {
 
                 //margin-left: 100px;
@@ -109,10 +114,11 @@
             #nav_asside {
                 display: block;
             }
-            #nav_main_btn_menu{
+
+            #nav_main_btn_menu {
                 position: absolute;
-                top: -60px;
-                right: 0px;
+                top     : -60px;
+                right   : 0px;
             }
 
             .nav_main_ops_menu {
@@ -131,10 +137,10 @@
 
     @media (max-width: 600px) {
         background   : #d31a1adc;
-        width  : calc(100% - 20px);
+        width        : calc(100% - 20px);
         padding-right: 10px;
         padding-left : 10px;
-       margin-left: 0px;
+        margin-left  : 0px;
 
     }
 

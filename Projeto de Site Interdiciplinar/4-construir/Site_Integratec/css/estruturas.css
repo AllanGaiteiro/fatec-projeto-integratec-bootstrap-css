@@ -89,6 +89,12 @@ pre {
 }
 
 @media (max-width: 600px) {
+  .header {
+    width: calc(100% - 20px);
+    background-position: -300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .conteudoPrincipal {
     width: 100%;
   }

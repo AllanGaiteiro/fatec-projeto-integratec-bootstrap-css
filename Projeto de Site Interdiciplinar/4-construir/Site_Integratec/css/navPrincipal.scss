@@ -1,8 +1,4 @@
-body {
-    background-color: rgb(143, 143, 143);
-    margin          : 0px;
-    
-}
+
 #nav_Principal_navegador {
     position         : relative;
     width            : 100%;
@@ -80,6 +76,7 @@ body {
             margin-left: -20px;
             
         }
+        transition: 2s all;
     }
 
     #nav_Principal_nav:hover {

@@ -1,4 +1,4 @@
-
+//<!--Autor do Arquivo: @Allan Gaiteiro -->//
 
 function clicou(n){
     document.querySelector(`#${n}`).style.opacity= 1

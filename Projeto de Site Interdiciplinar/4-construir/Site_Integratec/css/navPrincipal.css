@@ -1,8 +1,3 @@
-body {
-  background-color: #8f8f8f;
-  margin: 0px;
-}
-
 #nav_Principal_navegador {
   position: relative;
   width: 100%;
@@ -29,6 +24,8 @@ body {
   right: 0px;
   margin-top: -15px;
   display: inline-block;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 #nav_Principal_navegador #nav_Principal_nav a {

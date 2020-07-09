@@ -36,7 +36,7 @@ p {
 header {
   position: relative;
   width: calc(100% - 80px);
-  height: 490px;
+  height: 640px;
   background-image: url(../images/Sobre_header.png);
   background-repeat: no-repeat;
   margin-top: 0px;

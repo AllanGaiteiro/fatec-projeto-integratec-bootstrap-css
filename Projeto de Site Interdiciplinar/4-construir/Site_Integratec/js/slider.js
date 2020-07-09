@@ -1,4 +1,4 @@
-
+//<!--Autor do Arquivo: @Allan Gaiteiro -->//
 ////////testes
 //document.querySelector('div.cabecalho').id = 'slider_3'  //
 ///cabecalho.id = 'slider_3'

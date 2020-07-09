@@ -2,7 +2,24 @@ body {
     margin : 0px;
     padding: 0px;
 }
+@media(max-width: 600px){
+    .conteudoPrincipal{
+    width: 100%;    
+    padding-left: 10px;
+    padding-right: 10px;
 
+    section{
+        width: calc(100% - 20px);
+    }
+    pre{
+        
+        width: calc(100% - 20px);
+        code{
+            width: calc(100% - 20px);
+        }
+    }
+  }
+}
 
 object {
 

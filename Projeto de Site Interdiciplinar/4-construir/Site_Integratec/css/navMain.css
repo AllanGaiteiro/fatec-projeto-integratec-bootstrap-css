@@ -2,9 +2,8 @@
   position: relative;
   width: 1140px;
   height: 70px;
-  background: #CE1919;
+  background: #d31a1a;
   margin: 0px;
-  margin-left: -40px;
   margin-top: -5px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -39,7 +38,7 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 70px;
-  color: black;
+  color: white;
 }
 
 #nav_main_navegador #nav_main_nav #nav_asside {
@@ -68,16 +67,27 @@
 
 #nav_main_navegador #nav_main_nav #nav_main_btn_menu {
   display: none;
+  margin-top: -5px;
+}
+
+#nav_main_navegador #nav_main_nav #nav_main_btn_menu img {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
-  margin-top: -5px;
+}
+
+#nav_main_navegador #nav_main_nav #nav_main_btn_menu h2 {
+  margin-left: 30px;
 }
 
 @media (max-width: 600px) {
   #nav_main_navegador #nav_main_nav #nav_main_btn_menu {
-    display: block;
-    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
     margin-right: 0px;
   }
 }

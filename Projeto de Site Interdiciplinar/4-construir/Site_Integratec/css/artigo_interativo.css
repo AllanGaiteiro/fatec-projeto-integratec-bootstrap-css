@@ -3,6 +3,23 @@ body {
   padding: 0px;
 }
 
+@media (max-width: 600px) {
+  .conteudoPrincipal {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .conteudoPrincipal section {
+    width: calc(100% - 20px);
+  }
+  .conteudoPrincipal pre {
+    width: calc(100% - 20px);
+  }
+  .conteudoPrincipal pre code {
+    width: calc(100% - 20px);
+  }
+}
+
 object {
   margin-left: -20px;
   width: 1100px;

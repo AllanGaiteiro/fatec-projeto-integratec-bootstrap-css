@@ -5,6 +5,9 @@
     <!---Autor Arquivo Luis Henrrique-->
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/Artigos_matérias.css">
     <link rel="stylesheet" href="../css/navPrincipal.css">
     <link rel="stylesheet" href="../css/artigo_interativo.css">
@@ -12,8 +15,7 @@
     <link rel="stylesheet" href="../css/navPrincipal.css">
     <link rel="stylesheet" href="../css/navMain.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
     <title>Integratec</title>
 </head>
 
@@ -21,12 +23,13 @@
     <div class="container">
         <header class="header">
             <!-- parte criada por @Allan Gaiteiro-->
+
             <div id="nav_Principal_navegador">
                 <h1>Integratec</h1>
                 <nav id="nav_Principal_nav">
-                    <img id="nav_Principal_btn_menu" src="../images/Menu.png" alt="este é o menu">
-                    <a class="nav_Principal_ops_menu" href="../index.html">Home</a>
-                    <a class="nav_Principal_ops_menu" href="../html/artigos.html">Artigos</a>
+                    <img id="nav_Principal_btn_menu" src="../images/Menu.png" alt="este é o menu" onclick="menu('Principal')">
+                    <a class="nav_Principal_ops_menu" href="../index.html" >Home</a>
+                    <a class="nav_Principal_ops_menu" href="../html/sobre.html">Sobre</a>
                 </nav>
             </div>
 
@@ -40,21 +43,25 @@
                 <div class="navMenu" id="nav_main_navegador">
 
                     <nav id="nav_main_nav">
-                        <img id="nav_main_btn_menu" src="../images/menuMain.png" alt="este é o menu">
-                        <a class="nav_main_ops_menu" href="#"> Redes e internet</a>
-                        <a class="nav_main_ops_menu" href="#">Estrutura de Dados</a>
-                        <a class="nav_main_ops_menu" href="#">Praticas de Design</a>
-                        <a class="nav_main_ops_menu" id="nav_asside" href="#">Conteudos Relacionados</a>
+                        <div id="nav_main_btn_menu">
+                            <h2 style="color: white;">Menu de Arquivos </h2>
+
+                            <img src="../images/menuMain.png" alt="este é o menu" onclick="menu('main')">
+                        </div>
+                        <a class="nav_main_ops_menu" href="#nav_main_navegador" onclick="artigos('redes')"> Redes e internet</a>
+                        <a class="nav_main_ops_menu" href="#nav_main_navegador" onclick="artigos('estruturas')">Estrutura de Dados</a>
+                        <a class="nav_main_ops_menu" href="#nav_main_navegador" onclick="artigos('interativo')">Praticas de Design</a>
+                        <a class="nav_main_ops_menu" id="nav_asside" href="#artigos">Conteudos Relacionados</a>
 
                     </nav>
                 </div>
             </header>
-            <div class="flex">
+            <div class="artigo_main">
                 <section class="conteudoPrincipal">
 
                     <!---Conteudo de Redes para internet-->
                     <!---Criado por @luis Henrique-->
-                    <div id="Artigos_redes">
+                    <div class="artigos_redes">
                         <section id="redes">
                             <article class="rede">
                                 <h1>Redes e Internet</h1>
@@ -215,7 +222,7 @@
                     </div>
                     <!---Conteudo de estruturas de dados-->
                     <!---Criado por @allan gaiteiro-->
-                    <div id="estruturas">
+                    <div class="artigos_estruturas">
                         <section id="principal">
                             <article id="estr_apresentaçao">
                                 <h1>Estruturas de Dados</h1>
@@ -303,7 +310,7 @@
 
                     <!---Conteudo de Interativo-->
                     <!---Criado por @allan gaiteiro-->
-                    <div class="Artigo_Interativo" id="div_interativo">
+                    <div class="artigos_interativo" id="div_interativo">
 
                         <section>
                             <h2>Praticas de Design</h2>
@@ -365,16 +372,17 @@
                         </section>
 
                     </div>
-                    <object class="Artigo_Interativo" data="interativo.html" type=""></object>
+
+                    <object class="artigos_interativo" data="interativo.html" type=""></object>
 
                 </section>
                 <aside class="artigos">
                     <!---Conteudo de Redes para internet-->
                     <!---Criado por @luis Henrique-->
+                    <h3 style="text-align: center; background: #BBBBBB; margin: 0px; padding: 21px;">Conteúdos
+                        Relacionados</h3>
+                    <section class="asside_redes">
 
-                    <section id="asside_redes">
-                        <h3 style="text-align: center; background: #BBBBBB; margin: 0px; padding: 21px;">Conteúdos
-                            Relacionados</h3>
                         <aside class="artigo">
                             <h3>"5 motivos pelos quais a sua empresa precisa da nuvem!"</h3>
                             <img src="../images/internet.png" alt="">
@@ -401,15 +409,9 @@
                         </aside>
                     </section>
 
-                    <section id="asside_struturas">
-                        <div class="conteudo_asside">
-                            <h3>Ponteiros</h3>
-                            <img src="../images/asside-struct-3.png" alt="relacionado ao conteudo">
-                            <p>Ponteiros são muito úteis quando uma variável tem que ser acessada em diferentes partes
-                                de um
-                                programa. </p>
-                        </div>
-                        <div class="conteudo_asside">
+                    <section class="asside_estruturas">
+
+                        <div class="artigo">
                             <h3>Para que serve Fgets? </h3>
                             <img src="../images/asside-struct-2.png" alt="relacionado ao conteudo">
                             <p>Para se ler uma string num arquivo, a tambem a funçao gets() que fas um serviço parecido
@@ -417,7 +419,7 @@
                                 fgets()
                             </p>
                         </div>
-                        <div class="conteudo_asside">
+                        <div class="artigo">
                             <h3>Onde se usa C?</h3>
                             <img src="../images/asside-struct-1.png" alt="relacionado ao conteudo">
                             <p>Usado em programas que lidam diretamente com hardware, como sistemas operacional ou um
@@ -425,8 +427,8 @@
                         </div>
 
                     </section>
-                    <section id="asside_interativo">
-                        <article>
+                    <section class="asside_interativo">
+                        <article class="artigo">
                             <h3>Jogos em java Script</h3>
                             <img src="../images/art_nuvem1.png" alt="">
                             <p>
@@ -444,6 +446,8 @@
 
 
         </main>
+        <!--JAVA Script-->
+        <script src="../js/artigos.js"></script>
         <footer>
             <article class="flex2">
                 <article class="footer">
@@ -476,6 +480,7 @@
             </article>
         </footer>
     </div>
+
 </body>
 
 </html>
