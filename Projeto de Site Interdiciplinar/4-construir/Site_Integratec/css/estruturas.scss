@@ -1,26 +1,29 @@
-body {
-    margin: 0px;
-    width : 1060px;
-    margin: auto;
-    @media(max-width: 600px){
-        width: 100%;
-    }
-}
-
 #estruturas {
-    
+    width: 1060px;
+
     width          : 100%;
     display        : flex;
     justify-content: space-between;
-    @media(max-width: 600px){
+
+    @media(max-width: 600px) {
         display: block;
+        width  : 100%;
     }
 }
 
+
 #principal {
     width: 680px;
-    @media(max-width: 600px){
+
+    @media(max-width: 600px) {
         width: 100%;
+
+        //padding-left: 10px;
+        //padding-right: 10px;
+        #estr_apresentaçao {
+            padding-left : 10px;
+            padding-right: 10px;
+        }
     }
 }
 
@@ -37,32 +40,43 @@ body {
         padding      : 10px;
         margin-bottom: 60px;
 
-        
+
     }
 
     @media(max-width: 600px) {
         width: 100%;
-        img{
+
+        img {
             width: 100%;
         }
     }
 }
 
+@media(max-width:600px) {
+    #estr_Struct {
+        padding-left : 10px;
+        padding-right: 10px;
+    }
+}
+
 pre {
-    margin:auto;
+    margin       : auto;
     background   : #E0E0E0;
     width        : 620px;
     border-radius: 10px;
-    @media(max-width: 600px){
-        width: 100%;
-        code{
-            
-                width: 300px;
-            
+
+    @media(max-width: 600px) {
+        width: calc(100% - 20px);
+
+        code {
+
+            width: calc(100% - 20px);
+
         }
     }
-    
+
 }
+
 #code1 {
 
     height: 170px;
@@ -70,4 +84,15 @@ pre {
 
 #code2 {
     height: 490px;
+}
+
+///////// externo
+@media(max-width: 600px) {
+    .conteudoPrincipal {
+        width: 100%;
+
+        section {
+            width: calc(100% - 20px);
+        }
+    }
 }

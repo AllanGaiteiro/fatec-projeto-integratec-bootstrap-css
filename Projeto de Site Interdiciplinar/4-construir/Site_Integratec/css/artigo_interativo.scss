@@ -3,6 +3,7 @@ body {
     padding: 0px;
 }
 
+
 object {
 
     margin-left: -20px;
@@ -11,14 +12,11 @@ object {
     padding    : 0px;
     margin-top : 40px;
 
+    @media(max-width:600px) {
+        display: none;
+    }
 }
 
-
-main {
-    margin          : auto;
-    width           : 1060px;
-    background-color: white;
-}
 
 #div_interativo {
     display        : flex;
@@ -40,42 +38,40 @@ main {
             font-size  : 16px;
             line-height: 22px;
         }
+
+        @media(max-width:600px) {
+            width: 100%;
+        }
     }
 
-    aside {
-        width: 340px;
+
+    @media(max-width:600px) {
+        display: block;
     }
+
 }
 
 #asside_interativo {
     background: rgba(196, 196, 196, 0.31);
 
     article {
-
         background: #BBBBBB;
-
         h3 {
             font-style : normal;
             font-weight: bold;
             font-size  : 22px;
             line-height: 30px;
             text-align : center;
-
             color: #FFFFFF;
-
-
         }
-
         img {
             width : 310px;
             height: 285px;
         }
-
         p {
             font-style : normal;
             font-weight: normal;
             font-size  : 20px;
-
             color: #FFFFFF;
         }
 
@@ -110,14 +106,14 @@ main {
         }
 
         button {
-            position: absolute;
-            bottom  : 10px;
-            left    : calc(50% - calc(170px / 2));
-            width   : 170px;
-            height  : 50px;
-            color   : white;
+            position  : absolute;
+            bottom    : 10px;
+            left      : calc(50% - calc(170px / 2));
+            width     : 170px;
+            height    : 50px;
+            color     : white;
             font-style: Bold;
-            font-size: 22px;
+            font-size : 22px;
 
 
             background   : #CE1919;
@@ -125,6 +121,16 @@ main {
             box-sizing   : border-box;
             border-radius: 2px;
         }
+        @media(max-width: 600px){
+            width: calc(100% - 10px);
+            margin-bottom: 20px;
+    
+        } 
+    }
+    @media(max-width: 600px){
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }

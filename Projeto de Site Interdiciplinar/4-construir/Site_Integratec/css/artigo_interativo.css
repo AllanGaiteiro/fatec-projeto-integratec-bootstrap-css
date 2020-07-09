@@ -11,10 +11,10 @@ object {
   margin-top: 40px;
 }
 
-main {
-  margin: auto;
-  width: 1060px;
-  background-color: white;
+@media (max-width: 600px) {
+  object {
+    display: none;
+  }
 }
 
 #div_interativo {
@@ -44,8 +44,16 @@ main {
   line-height: 22px;
 }
 
-#div_interativo aside {
-  width: 340px;
+@media (max-width: 600px) {
+  #div_interativo section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #div_interativo {
+    display: block;
+  }
 }
 
 #asside_interativo {
@@ -122,5 +130,20 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2px;
+}
+
+@media (max-width: 600px) {
+  #jogosFatec article {
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #jogosFatec {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=artigo_interativo.css.map */
