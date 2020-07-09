@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/navPrincipal.css">
     <link rel="stylesheet" href="../css/artigo_interativo.css">
     <link rel="stylesheet" href="../css/estruturas.css">
-    <link rel="stylesheet" href="../css/navPrincipal.css">
-    <link rel="stylesheet" href="../css/navMain.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/menu_Principal_.css">
 
 
     <title>Integratec</title>
@@ -23,16 +23,24 @@
     <div class="container">
         <header class="header">
             <!-- parte criada por @Allan Gaiteiro-->
+            <div class="menu_Principal_Total">
 
-            <div id="nav_Principal_navegador">
-                <h1>Integratec</h1>
-                <nav id="nav_Principal_nav">
-                    <img id="nav_Principal_btn_menu" src="../images/Menu.png" alt="este é o menu" onclick="menu('Principal')">
-                    <a class="nav_Principal_ops_menu" href="../index.html" >Home</a>
-                    <a class="nav_Principal_ops_menu" href="../html/sobre.html">Sobre</a>
+                <h1 id="h1_menuPrincipal">Integratec</h1>
+                <input type="checkbox" id="btn_Nav_Principal">
+                <label for="btn_Nav_Principal">&#9776;</label>
+
+
+                <nav class="menu_Principal">
+                    <h1 href="" id="logo">Integratec</h1>
+                    <ul>
+
+
+                        <li><a href="../index.html"> Home</a></li>
+
+                        <li><a href="../html/sobre.html">Sobre</a>
+                    </ul>
                 </nav>
             </div>
-
 
             <article class="texto">
                 <h1>Veja nossos artigos e criados com base nas aulas do 2º Semesre da fatec</h1>
@@ -40,21 +48,22 @@
         </header>
         <main>
             <header>
-                <div class="navMenu" id="nav_main_navegador">
+                <div class="menuTotal">
+                    <h1 id="h1_menu">Menu de Artigos</h1>
+                    <input type="checkbox" id="bt_menu">
+                    <label for="bt_menu">&#9776;</label>
 
-                    <nav id="nav_main_nav">
-                        <div id="nav_main_btn_menu">
-                            <h2 style="color: white;">Menu de Arquivos </h2>
 
-                            <img src="../images/menuMain.png" alt="este é o menu" onclick="menu('main')">
-                        </div>
-                        <a class="nav_main_ops_menu" href="#nav_main_navegador" onclick="artigos('redes')"> Redes e internet</a>
-                        <a class="nav_main_ops_menu" href="#nav_main_navegador" onclick="artigos('estruturas')">Estrutura de Dados</a>
-                        <a class="nav_main_ops_menu" href="#nav_main_navegador" onclick="artigos('interativo')">Praticas de Design</a>
-                        <a class="nav_main_ops_menu" id="nav_asside" href="#artigos">Conteudos Relacionados</a>
-
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#nav_main_navegador" onclick="artigos('redes')"> Redes e internet</a></li>
+                            <li><a href="#nav_main_navegador" onclick="artigos('estruturas')">Estrutura de Dados</a>
+                            <li><a href=#nav_main_navegador" onclick="artigos('interativo')">Praticas de Design</a>
+                            <li><a id="nav_asside" href="#artigos">Conteudos Relacionados</a></li>
+                        </ul>
                     </nav>
                 </div>
+
             </header>
             <div class="artigo_main">
                 <section class="conteudoPrincipal">
@@ -191,8 +200,7 @@
                                 <p>A computação em nuvem é dividida em três tipos. Sendo eles:</p>
                             </article>
                             <article class="linear">
-                                <img class="img1" src="../images/rectangle4.png" alt="">
-                                <img class="img2" src="../images/rectangle5.png" alt="">
+                                <img class="img1" src="../images/component10.png" alt="">
                             </article>
                             <article class="nuvem">
                                 <article class="nuvem1">
@@ -281,7 +289,7 @@
         char sobrenome[40];
         ////.... etc ...
     } voce;
-    
+
     int main(void)
     {
         /// Passando valor
@@ -289,10 +297,10 @@
         fgets(voce.nome, 40, stdin);
         printf("digite o sobrenome:");
         fgets(voce.sobrenome, 40, stdin);
-    
+
         ///imprimindo o valor
-    
-        printf("\nSeu nome é %s %s", 
+
+        printf("\nSeu nome é %s %s",
         voce.nome, voce.sobrenome);
     }
                     </code>

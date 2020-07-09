@@ -1,0 +1,153 @@
+* {
+    margin : 0px;
+    padding: 0px;
+}
+
+#h1_menuPrincipal {
+    display: none;
+
+    @media(max-width: 600px) {
+        display    : inline-block;
+        height     : 70px;
+        line-height: 70px;
+        float      : left;
+        color      :  black;
+        position   : absolute;
+        margin-left: 10px;
+
+    }
+}
+
+#logo {
+    margin-left: -40px;
+    width      : 120px;
+    display: inline-block;
+    color: black;
+    @media(max-width: 600px) {
+        display: none;
+    }
+
+}
+
+.menu_Principal_Total {
+    margin    : 0px;
+    height    : 70px;
+    width     : 100%;
+    
+}
+
+.menu_Principal {
+    width : 100%;
+    height: 70px;
+    
+
+    
+    font-size : 22px;
+    font-style: Bold;
+
+    h1 {
+        display     : inline;
+        padding-left: 40px;
+        line-height : 70px;
+
+    }
+}
+
+.menu_Principal ul {
+    list-style: none;
+    position  : relative;
+    margin-top: -70px;
+    
+
+}
+
+.menu_Principal ul li {
+    width: 140px;
+    
+    float: right;
+}
+
+
+.menu_Principal a {
+    padding        : 15px;
+    height         : 40px;
+    line-height    : 40px;
+    display        : block;
+    text-decoration: none;
+    text-align     : center;
+    font-size: 36px;
+    font-style: bold;
+    color          : black;
+}
+
+.menu_Principal a:hover {
+    background: #00000023;
+
+}
+
+label[for="btn_Nav_Principal"] {
+    padding         : 5px;
+    background-color: grey;
+    color           : white;
+    text-align      : center;
+    font-size       : 39px;
+    line-height     : 50px;
+    cursor          : pointer;
+    width           : 50px;
+    height          : 50px;
+}
+
+#btn_Nav_Principal {
+    display: none;
+}
+
+label[for="btn_Nav_Principal"] {
+    display: none;
+}
+
+
+@media(max-width: 600px) {
+
+    label[for="btn_Nav_Principal"] {
+        display    : inline-block;
+        margin-top : 5px;
+        margin-left: calc(100% - 70px);
+
+    }
+
+    #btn_Nav_Principal:checked~.menu_Principal {
+        margin-left: 0%;
+        
+    }
+    .menu_Principal_Total {
+        background-color: rgba(255, 255, 255, 0.747);
+        color: black;
+    }
+
+    
+    .menu_Principal {
+        background-color: rgba(255, 255, 255, 0.747);
+        width: 100%;
+        margin-top : 5px;
+        margin-left: -100%;
+        
+        transition : all .4s;
+    }
+
+    .menu_Principal ul li {
+        
+        width: 100%;
+        float: none;
+        
+    }
+    .menu_Principal ul {
+         margin-top: 0px;
+         background-color: rgba(255, 255, 255, 0.747);
+        
+    }
+
+   
+
+    
+
+}

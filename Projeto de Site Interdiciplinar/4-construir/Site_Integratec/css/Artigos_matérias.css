@@ -20,8 +20,6 @@ body {
   padding-right: 40px;
 
 }
-
-
 .texto {
   position        : absolute;
   background-color: #00000091;
@@ -33,9 +31,9 @@ body {
   left      : 0px;
   width     : 650px;
   height    : 170px;
-  
+
 }
-.texto h1{  
+.texto h1{
   color     : #FFFFFF;
   font-size : 48px;
   margin: 0px;
@@ -43,12 +41,13 @@ body {
 }
 
 .rede {
-  width     : 665px;
+  width     : 700px;
   text-align: justify;
 }
 
 .rede h1 {
   text-align: center;
+  font-size: 25px;
 }
 
 .rede2 {
@@ -56,15 +55,19 @@ body {
 
   text-align: justify;
 }
-
+.rede2 h1{
+  font-size: 25px;
+}
 .rede2 img {
-
-  top   : 940px;
+  margin-top: -270px;
+  margin-left: 365px;
   width : 335px;
-  left  : 415px;
+  float: left;
   height: 245px;
 }
-
+.beneficios h1{
+  font-size: 25px;
+}
 .beneficios {
   width     : 700px;
   text-align: justify;
@@ -92,18 +95,12 @@ body {
 .computação{
 
 }*/
-.linear {
-  height : 10px;
-  display: flex;
-}
 
 .linear .img1 {
-  width: 250px;
+  width: 700px;
+  height : 10px;
 }
 
-.linear .img2 {
-  width: 450px;
-}
 
 .nuvem {
   width          : 700px;
@@ -146,7 +143,7 @@ body {
 footer {
   background-color: #CE1919;
   color           : #FFFFFF;
-  
+
 }
 
 .flex2 {
@@ -171,7 +168,7 @@ footer {
   .container {
     width: 100%;
   }
-  
+
   .artigo_main{
     width: 100%;
     display: block;
@@ -225,19 +222,11 @@ footer {
     display    : block;
   }
 
-  .linear .img1 {
-    width     : 25%;
-    height    : 130px;
-    width     : 10px;
-    margin-top: 34px;
-  }
 
-  .linear .img2 {
-    width      : 25%;
-    height     : 280px;
-    width      : 10px;
-    margin-top : 160px;
-    margin-left: -10px;
+  .linear .img1 {
+    height: 370px;
+    position: absolute;
+    width: 10px;
   }
 
   .nuvem {
@@ -252,14 +241,14 @@ footer {
   }
 
   .artigo img {
-    margin-left: 50px;
+    margin-left: 40px;
     width      : 75%;
   }
 
   footer {
     width     : 100%;
     display   : block;
-    
+
   }
 
   .flex2 {
