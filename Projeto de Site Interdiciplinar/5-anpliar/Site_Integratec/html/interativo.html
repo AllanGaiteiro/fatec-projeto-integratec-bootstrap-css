@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Autor do Arquivo: @Allan Gaiteiro -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/interaçao.css">
+    <script src="../js/interativo.js"></script>
+    <title>Interativo</title>
+</head>
+
+<body>
+    <div id="cont_Interativo">
+        <header>
+            <h1> Projeto Interativo da aula de Praticas de Desing</h1>
+        </header>
+        <main>
+            <img id="pc" src="../images/pc_gamer_1.png" usemap="#“shape”">
+
+            <map name=“shape”>
+                <area class="block" shape="poly" alt="placa de Video" coords="93, 264,221,236,247,249,233,280,156,286,93,302"
+                    onmouseover="clicou('placaVideo')" />
+                <area class="block" shape="poly" alt="colers"
+                    coords="88, 242, 88, 146, 118, 112, 242, 101, 203, 146, 142, 171, 138, 232"
+                    onmouseover="clicou('coler')" />
+                <area class="block" shape="poly" alt="placa de Video" coords="162,181,210,157,209,219,154,234"
+                    onmouseover="clicou('processador')" />
+            </map>
+
+
+
+            <div id="coler">
+                <img src="../images/cooler.png" alt="">
+                <div class="fechar" onclick="fechar('coler')"><p>x</p></div>
+
+                <p>
+                    Cooler Fan Dupla Face 120mm C/18 Leds Rgb P/ Gabinete Pc Cpu
+                </p>
+            </div>
+
+            <div id="processador">
+                <img src="../images/processador.png" alt="">
+                <div class="fechar" onclick="fechar('processador')"><p>x</p></div>
+                <p>
+                    Intel Core i7-9700KF Coffee Lake, Cache 12MB, 3.60GHz
+                </p>
+            </div>
+            <div id="placaVideo">
+                <img src="../images/pcVideo.png" alt="">
+                <div class="fechar" onclick="fechar('placaVideo')"><p>x</p></div>
+                <p>
+                    Placa de Vídeo GeForce RTX™ 2060 6GB
+                </p>
+            </div>
+        </main>
+
+    </div>
+    <script src="../js/Obj_interativo.js"></script>
+</body>
+
+</html>

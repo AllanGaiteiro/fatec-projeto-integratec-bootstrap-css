@@ -1,0 +1,173 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.block{
+    position: absolute;
+    display: block;
+    background-color: blue;
+    border: 2px solid black;
+}
+.block:hover{
+    cursor: pointer;
+}
+
+
+#cont_Interativo {
+    width        : 1060px;
+    height       : 650px;
+    margin       : auto;
+    border       : 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+
+    header {
+        margin    : 0px;
+        background: rgba(0, 0, 0, 0.6);
+        height    : 90px;
+
+        h1 {
+            margin-top : 0px;
+            margin     : auto;
+            color      : white;
+            line-height: 90px;
+            font-style : normal;
+            font-weight: bold;
+            font-size  : 32px;
+            text-align : center;
+        }
+    }
+
+    main {
+        position: relative;
+
+        #pc {
+            margin-left: 550px;
+            width      : 500px;
+            height     : 500px;
+            z-index    : -1;
+            
+            
+        }
+        
+
+        #coler,
+        #processador,
+        #placaVideo {
+            position        : absolute;
+            display         : flex;
+            font-style      : normal;
+            font-weight     : bold;
+            font-size       : 18px;
+            border          : 2px solid black;
+            border-radius   : 5px;
+            background-color: white;
+            box-shadow      : 20px -20px 6px 2px rgba(0, 0, 0, 0.3);
+            //visibility: hidden;
+            opacity         : 0;
+            transition      : 1s all;
+
+
+            .fechar {
+                position     : absolute;
+                top          : 10px;
+                right        : 10px;
+                width        : 25px;
+                height       : 25px;
+                border-radius: 50%;
+                background   : #A6A4A4;
+
+                p {
+                    font-size: 20px;
+                    color: black;
+                    position: absolute;
+                    top: -20px;
+                    left: 8px;
+                    width: 0px;
+
+                }
+            }
+
+            .fechar:hover {
+                background-color: rgb(197, 8, 8);
+                cursor: pointer;
+                p {
+                    color: white;
+                }
+            }
+            img{
+                transition: all 0.5s;
+            }
+        }
+        #coler:hover,
+        #processador:hover,
+        #placaVideo:hover{
+            cursor: pointer;
+            box-shadow      : 5px -5px 6px 2px rgba(0, 0, 0, 0.527);
+
+            img{
+                margin-left: 3px;
+                margin-top: 3px;
+                transform: scale(1.04,1.04);
+            }
+        }
+
+        width: 100%;
+
+        #coler {
+            top   : 90px;
+            left  : 315px;
+            width : 345px;
+            height: 150px;
+
+            img {
+                width : 90px;
+                height: 120px;
+            }
+
+            p {
+                width: 200px;
+            }
+
+        }
+
+        #processador {
+            top   : 210px;
+            left  : 125px;
+            width : 330px;
+            height: 195px;
+
+            img {
+                width : 135px;
+                height: 170px;
+            }
+
+            p {
+                width: 160px;
+            }
+        }
+
+        #placaVideo {
+            top   : 350px;
+            left  : 260px;
+            width : 330px;
+            height: 185px;
+
+            img {
+                position: absolute;
+                width   : 165px;
+                height  : 170px;
+                z-index : 0;
+            }
+
+            p {
+                position: absolute;
+                right   : 30px;
+                z-index : 1;
+                width   : 165px;
+            }
+        }
+    }
+}

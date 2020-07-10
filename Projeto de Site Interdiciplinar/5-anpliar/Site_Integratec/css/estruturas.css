@@ -1,0 +1,140 @@
+@charset "UTF-8";
+#estruturas {
+  width: 1060px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  #estruturas {
+    display: block;
+    width: 100%;
+  }
+}
+
+#estr_apresentaçao h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#estr_apresentaçao h1 article h2 {
+  font-size: 22px;
+}
+
+#principal {
+  width: 680px;
+}
+
+#principal article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#principal pre {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#principal ul {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  #principal ul {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  #principal {
+    width: 100%;
+  }
+  #principal #estr_apresentaçao {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+#asside_struturas {
+  background: rgba(196, 196, 196, 0.31);
+  width: 330px;
+  color: white;
+  padding-top: 95px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#asside_struturas .conteudo_asside {
+  background: #BBBBBB;
+  height: 480px;
+  padding: 10px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 600px) {
+  #asside_struturas {
+    width: 100%;
+  }
+  #asside_struturas img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #estr_Struct {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+pre {
+  margin: auto;
+  background: #E0E0E0;
+  width: 620px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  pre {
+    width: calc(100% - 20px);
+  }
+  pre code {
+    width: calc(100% - 20px);
+  }
+}
+
+#code1 {
+  height: 170px;
+}
+
+#code2 {
+  height: 490px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+    background-position: -300px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .conteudoPrincipal {
+    width: 100%;
+  }
+  .conteudoPrincipal section {
+    width: calc(100% - 20px);
+  }
+}
+
+.conteudoPrincipal {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=estruturas.css.map */

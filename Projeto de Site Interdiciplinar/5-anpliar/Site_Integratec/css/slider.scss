@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(143, 143, 143);
+    margin          : 0px;
+
+}
+
+/////// slider 1 : imagens do cloud Computing
+#slider_1 {
+    background-image   : url(../images/slider_1.png);
+    background-position: 356px -70px;
+
+    #nuvem_h2 {
+        display: block;
+        width: 340px;
+
+        @media(max-width: 600px) {
+            width     : calc(100% - 20px);
+            
+        }
+
+    }
+
+    @media(max-width: 600px) {
+        background-position: center;
+    }
+}
+
+//////// slider 2 : imagens do estruturas de dados
+#slider_2 {
+    background-image   : url(../images/slider_2.png);
+    background-position: 439px 51px;
+
+    #struct_h2 {
+        display: block;
+        width: 520px;
+
+        @media(max-width: 600px) {
+            width     : calc(100% - 20px);
+            
+        }
+    }
+
+    @media(max-width: 600px) {
+        background-position: center;
+    }
+}
+
+/////// slider 3 : imagem praticas de design
+#slider_3 {
+
+    background-image   : url(../images/slider_3.png);
+    background-position: 439px 0px;
+
+    #design_h2 {
+        display: block;
+        width: 420px;
+
+        @media(max-width: 600px) {
+            width     : calc(100% - 20px);
+            
+        }
+    }
+
+    @media(max-width: 600px) {
+        background-position: -100px;
+    }
+}
+/////// Configuraçoes Padroes
+.cabecalho {
+    position: relative;
+    margin-top           : 0px;
+    padding-left         : 40px;
+    padding-right        : 40px;
+    background-color     : white;
+    width                : 1060px;
+    height               : 640px;
+    margin               : auto;
+    background-repeat    : no-repeat;
+
+    h2 {
+        position: absolute;
+        bottom: 60px;
+        display: none;
+        
+        
+        font-style: italic;
+        font-size : 32px;
+
+        @media(max-width: 600px) {
+            margin: 0px;
+            margin-left     : -10px;
+            padding         : 10px;
+            width : calc(100% - 40px);
+            padding-top     : 20px;
+            padding-left    : 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color           : white;
+
+        }
+    }
+
+    #barra {
+        position: absolute;
+        bottom  : 30px;
+        width   : calc(100% - 80px);
+        height  : 5px;
+        border  : 1px solid black;
+
+        #loadBarra {
+            width           : 0%;
+            height          : 100%;
+            background-color: black;
+            animation: barra 5s linear infinite;
+            @keyframes barra {
+                0%{
+                    width: 0%;
+                }
+                100%{
+                    width: 100%;
+                }
+            }
+        }
+
+        @media(max-width: 600px) {
+            width : calc(100% - 20px);
+            bottom: 30px;
+            
+        }
+
+    }
+
+    @media(max-width:600px) {
+        width        : 100%;
+        margin: 0px;
+        padding-left : 0px;
+        padding-right: 0px;
+
+    }
+
+}

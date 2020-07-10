@@ -1,0 +1,264 @@
+.container {
+  width           : 1140px;
+  margin          : auto;
+  position        : relative;
+  background-color: #FFFFFF;
+}
+
+body {
+  background-color: #EBEBEB;
+  margin-top      : -20px;
+  font-family     : "Arial", sans-serif;
+}
+
+.header {
+  background-image : url(../images/artigo_header.png);
+  height           : 640px;
+  background-repeat: no-repeat;
+  width: 1060px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+.texto {
+  position        : absolute;
+  background-color: #00000091;
+  position  : absolute;
+  z-index   : 1;
+  top       : 345px;
+  bottom: 100px;
+  padding: 20px;
+  left      : 0px;
+  width     : 650px;
+  height    : 170px;
+
+}
+.texto h1{
+  color     : #FFFFFF;
+  font-size : 48px;
+  margin: 0px;
+  float: right;
+}
+
+.rede {
+  width     : 700px;
+  text-align: justify;
+}
+
+.rede h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.rede2 {
+  width: 330px;
+
+  text-align: justify;
+}
+.rede2 h1{
+  font-size: 25px;
+}
+.rede2 img {
+  margin-top: -270px;
+  margin-left: 365px;
+  width : 335px;
+  float: left;
+  height: 245px;
+}
+.beneficios h1{
+  font-size: 25px;
+}
+.beneficios {
+  width     : 700px;
+  text-align: justify;
+}
+
+.beneficios h1 {
+  text-align: center;
+}
+
+.beneficio {
+  width: 700px;
+}
+
+.flex {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.ben {
+  text-align: justify;
+  width     : 330px;
+}
+
+/*
+.computação{
+
+}*/
+
+.linear .img1 {
+  width: 700px;
+  height : 10px;
+}
+
+
+.nuvem {
+  width          : 700px;
+  display        : flex;
+  justify-content: space-between;
+}
+
+.nuvem1 {
+  margin-right: 25px;
+  text-align  : justify;
+}
+
+.artigos {
+
+  background-color: #EBEBEB;
+  margin-top      : -70px;
+  width           : 340px;
+}
+
+.artigo {
+  background-color: #BBBBBB;
+  height          : 485px;
+  padding         : 15px;
+  margin-top      : 37px;
+}
+
+.artigo img {
+  width : 310px;
+  height: 285px;
+}
+
+.artigos p {
+  text-align: justify;
+}
+
+.artigo h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: #CE1919;
+  color           : #FFFFFF;
+
+}
+
+.flex2 {
+  display        : flex;
+  justify-content: space-between;
+  margin-left    : 50px;
+  margin-right   : 30px;
+}
+.conteudoPrincipal{
+  width: 700px;
+}
+.artigo_main{
+  display: flex;
+  margin-bottom: 0px;
+  margin          : auto;
+  width           : 1060px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .artigo_main{
+    width: 100%;
+    display: block;
+  }
+
+  .texto{
+    display: none;
+  }
+
+  .rede {
+    width      : 100%;
+    display    : block;
+
+  }
+
+  .rede p {
+    display: block;
+    width  : 100%;
+  }
+
+  .rede2 {
+    width      : 100%;
+    display    : block;
+  }
+
+  .rede2 img {
+    display: none;
+    width   : 100%;
+    left    : 0px;
+  }
+
+  .beneficios {
+    margin-top : 0px;
+    display    : block;
+    width      : 90%;
+  }
+
+  .beneficio {
+    width      : 100%;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .ben {
+    width: 100%;
+  }
+
+  .computação {
+    width      : 100%;
+    display    : block;
+  }
+
+
+  .linear .img1 {
+    height: 370px;
+    position: absolute;
+    width: 10px;
+  }
+
+  .nuvem {
+    display    : block;
+    width      : 100%;
+    margin-left: 20px;
+  }
+
+  .artigos {
+    margin-top: 100px;
+    width   : 100%;
+  }
+
+  .artigo img {
+    margin-left: 40px;
+    width      : 75%;
+  }
+
+  footer {
+    width     : 100%;
+    display   : block;
+
+  }
+
+  .flex2 {
+    display: block;
+  }
+
+  .footer {
+    margin-top : 40px;
+    width      : 90%;
+    margin-left: 20px;
+  }
+}

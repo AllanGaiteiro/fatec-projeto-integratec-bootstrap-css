@@ -16,13 +16,7 @@
     color: black;
     position: absolute;
     margin-left: 10px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
   }
-}
-
-#h1_menuPrincipal:hover {
-  color: rgba(158, 149, 149, 0.637);
 }
 
 #logo {
@@ -30,12 +24,19 @@
   width: 120px;
   display: inline-block;
   color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media (max-width: 600px) {
   #logo {
     display: none;
   }
+}
+
+#logo:hover {
+  color: #979797;
+  cursor: pointer;
 }
 
 .menu_Principal_Total {
@@ -47,14 +48,20 @@
 .menu_Principal {
   width: 100%;
   height: 70px;
-  font-size: 22px;
-  font-style: Bold;
 }
 
 .menu_Principal h1 {
   display: inline;
   padding-left: 40px;
   line-height: 70px;
+  font-size: 36px;
+  font-style: Bold;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.menu_Principal h1:hover {
+  font-size: 38px;
 }
 
 .menu_Principal ul {
@@ -68,7 +75,7 @@
   float: right;
 }
 
-.menu_Principal a {
+.menu_Principal ul li a {
   padding: 15px;
   height: 40px;
   line-height: 40px;
@@ -78,10 +85,13 @@
   font-size: 36px;
   font-style: bold;
   color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.menu_Principal a:hover {
-  background: #00000023;
+.menu_Principal ul li a:hover {
+  font-size: 38px;
+  color: white;
 }
 
 label[for="btn_Nav_Principal"] {
