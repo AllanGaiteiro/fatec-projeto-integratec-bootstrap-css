@@ -14,6 +14,70 @@ body {
   cursor: pointer;
 }
 
+.divColer {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotateX(60deg);
+          transform: rotateX(60deg);
+  border-radius: 50%;
+  background-color: #b80707;
+}
+
+.divColer:hover {
+  background-color: red;
+}
+
+#divColer1 {
+  top: 104px;
+  right: 283px;
+}
+
+#divColer2 {
+  top: 125px;
+  right: 340px;
+}
+
+#divColer3 {
+  top: 182px;
+  right: 375px;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transform: rotateY(50deg);
+          transform: rotateY(50deg);
+}
+
+.divProc {
+  position: absolute;
+  top: 190px;
+  right: 310px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
+  background-color: #b80707;
+}
+
+.divProc:hover {
+  background-color: red;
+}
+
+.divVideo {
+  position: absolute;
+  top: 260px;
+  right: 270px;
+  width: 130px;
+  height: 10px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background-color: #b80707;
+}
+
+.divVideo:hover {
+  background-color: red;
+}
+
 #cont_Interativo {
   width: 1060px;
   height: 650px;
@@ -55,6 +119,10 @@ body {
 #cont_Interativo main #coler,
 #cont_Interativo main #processador,
 #cont_Interativo main #placaVideo {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;

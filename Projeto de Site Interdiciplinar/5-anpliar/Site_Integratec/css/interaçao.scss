@@ -13,8 +13,59 @@ body{
 .block:hover{
     cursor: pointer;
 }
+.divColer{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotateX(60deg);
+    border-radius: 50%;
+    background-color: rgb(184, 7, 7);
+}
+.divColer:hover{
+    background-color: red;
+}
+#divColer1{
+    top: 104px;
+    right: 283px;
+}
+#divColer2{
+    top: 125px;
+    right: 340px;
+}
 
-
+#divColer3{
+    top: 182px;
+    right: 375px;
+    transform: rotateX(0deg);
+    transform: rotateY(50deg);
+}
+.divProc{
+    position: absolute;
+    top: 190px;
+    right: 310px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: rotateY(45deg);
+    ///transform: rotateZ(15deg);
+    background-color: rgb(184, 7, 7);
+}
+.divProc:hover{
+    background-color: rgb(255, 0, 0);
+}
+.divVideo{
+    position: absolute;
+    top: 260px;
+    right: 270px;
+    width: 130px;
+    height: 10px;
+    transform: rotate(-10deg);
+    background-color: rgb(184, 7, 7);
+    
+}
+.divVideo:hover{
+    background-color: rgb(255, 0, 0);
+}
 #cont_Interativo {
     width        : 1060px;
     height       : 650px;
@@ -56,6 +107,10 @@ body{
         #coler,
         #processador,
         #placaVideo {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+             -ms-user-select: none;
+                 user-select: none;
             position        : absolute;
             display         : flex;
             font-style      : normal;
